@@ -29,12 +29,12 @@ class AboutPage extends React.Component {
             actives
        })
     }
-    else{
-        actives[i]= false;
-        this.setState({
-            actives
-        })
-      }
+    // else{
+    //     actives[i]= false;
+    //     this.setState({
+    //         actives
+    //     })
+    //   }
     })
   } 
 
@@ -45,6 +45,7 @@ art4 = React.createRef();
 
 
   componentDidMount() {
+      setTimeout(this.handleScroll,3500);
       window.addEventListener('scroll', this.handleScroll);
   }
   componentWillUnmount() {

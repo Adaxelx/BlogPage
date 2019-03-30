@@ -32,7 +32,6 @@ class NavButton extends React.Component {
 
     list = [
         { name:"Start" , path: "/", exact: true},
-        { name:"O mnie" , path: "/about"},
         { name:"Artykły" , path: "/articles"},
         { name:"Zadania" , path: "/tasks"},
         { name:"Paradoksy" , path: "/paradox"},
