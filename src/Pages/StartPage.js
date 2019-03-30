@@ -2,7 +2,7 @@ import React from 'react';
 import '../PageStyles/StartPage.css'
 
 import {NavLink} from 'react-router-dom';
-import img from '../images/triangles.png'
+import img from '../images/tablica.jpg'
 
 import AboutPage from './AboutPage.js'
 
