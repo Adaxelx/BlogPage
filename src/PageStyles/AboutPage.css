@@ -1,0 +1,43 @@
+.aboutPage{
+    width: 100%;
+}
+
+.aboutPage .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.aboutPage .container article{
+    margin: 1vh 0 1vh 0;
+    width: 80%;
+    transform: translateX(-150%);
+    animation: show .7s both;
+}
+
+.aboutPage .container article:nth-of-type(2){
+    animation-delay: .1s;
+}
+.aboutPage .container article:nth-of-type(3){
+    animation-delay: .2s;
+}
+.aboutPage .container article:nth-of-type(4){
+    animation-delay: .3s;
+}
+
+@keyframes show{
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.aboutPage .container article .content{
+    color: rgb(120,120,120);
+}
+
+.aboutPage .container article .mainWords{
+    font-size: 1.2rem;
+    margin: 2vh 0 2vh 0;
+}

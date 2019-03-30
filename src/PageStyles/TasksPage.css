@@ -1,0 +1,77 @@
+.tasksPage{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.tasks a{
+    display: block;
+    position: relative;
+    transform: translate(0%);
+    transition: .5s;
+    width: 75%;
+
+}
+
+.tasksPage  a{
+    border-bottom: 1px solid black;
+    border-radius: 0 0 10% 0;
+}
+
+
+
+
+/* .tasksCon a{
+    width: 80%;
+    position: relative;
+    left: 10%;
+} */
+
+
+/* .taskCon article.show{
+    transform: translateX(0);
+} */
+
+.tasks a .titleTask{
+    font-size: 1.2rem;
+    margin: .5rem 0 1rem 0;
+    animation: showTask .5s both;
+}
+
+@keyframes showTask{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.tasks a .sample{
+    color: rgb(140,140,140);
+    animation: showTask .5s .3s both;
+}
+
+@media (orientation: landscape){
+    .tasksPage{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        left: 5%;
+        align-items: flex-start;
+        align-content: space-around;
+    }
+    .tasks a{
+        display: block;
+        position: relative;
+        transform: translate(0%);
+        transition: .5s;
+        width: 45%;
+    
+    }
+}

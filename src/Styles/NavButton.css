@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* body{
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+} */
+
+.burgerContainer{
+    height: 8vh;
+    width: 8vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: -1vh;
+    z-index: 3;
+}
+
+@media (orientation: landscape){
+
+    /* nav */ 
+
+    .burgerContainer{
+        height: 15vh;
+        width: 15vh;
+        top: 0;
+        right: -1vh;
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 1024px){
+
+    /* nav */ 
+
+    .burgerContainer{
+        height: 10vh;
+        width: 10vh;
+        top: 0;
+        right: -1vh;
+    }
+}
+
+.burgerContainer p{
+    width: 50%;
+    height: 10%;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.burgerContainer .midBar{
+    top: 50%;
+}
+.burgerContainer .botBar{
+    top: 70%;
+}
+
+/* klasy zamykające i otwierające */ 
+
+.burgerContainer .topBar.open{
+    animation: topBar .3s  both;
+}
+.burgerContainer .midBar.open{
+    animation: midBar .3s  both;
+}
+.burgerContainer .botBar.open{
+    animation: botBar .3s  both;
+}
+.burgerContainer .topBar.back{
+    animation: topBarBack .3s  both;
+}
+.burgerContainer .midBar.back{
+    animation: midBarBack .3s  both;
+}
+.burgerContainer .botBar.back{
+    animation: botBarBack .3s  both;
+}
+
+
+/* animacje otwierające */
+
+
+@keyframes topBar{
+    30%{
+        transform: translate(-50%,-50%) rotate(-25deg);
+    }
+    50%{
+        top: 30%;
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(45deg);
+        top: 50%;
+    }
+}
+@keyframes midBar{
+    30%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes botBar{
+    30%{
+        transform: translate(-50%,-50%) rotate(25deg);
+    }
+    50%{
+        top: 70%;
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(-45deg);
+        top: 50%;
+    }
+   
+}
+
+/* animacje zamykające */ 
+
+@keyframes topBarBack{
+    0%{
+        top: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    50%{
+        top: 30%;
+    }
+    70%{
+        transform: translate(-50%,-50%) rotate(-25deg);
+    }
+    100%{
+        top: 30%;
+        transform: translate(-50%,-50%);
+    }
+   
+}
+@keyframes midBarBack{
+    0%{
+        opacity:0;
+        transform: translate(-50%,-50%) scaleX(0);
+    }
+    30%{
+        opacity:0;
+        transform: translate(-50%,-50%) scaleX(0);
+    }
+    90%{
+        opacity:1;
+        
+    }
+    100%{
+        opacity:1;
+        transform: translate(-50%,-50%) scaleX(1);
+    }
+}
+@keyframes botBarBack{
+    0%{
+        top: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    50%{
+        top: 70%;
+    }
+    70%{
+        transform: translate(-50%,-50%) rotate(25deg);
+    }
+    100%{
+        top: 70%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.openedNav{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(222,222,222);
+    position: fixed;
+    transform: translateY(-100%);
+    z-index: 2;
+}
+
+.openedNav.show{
+    animation: showOpenNav .5s both;
+}
+
+@keyframes showOpenNav{
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.openedNav ul{
+    height: 70%;
+    width:80%;
+    list-style-type: none;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.openedNav ul li{
+    opacity:0;
+}
+
+.openedNav ul li.show{
+    animation: liAnimation 1s .2s both;
+}
+
+.openedNav ul li:nth-of-type(2).show{
+    animation-delay: .3s;
+}
+.openedNav ul li:nth-of-type(3).show{
+    animation-delay: .4s;
+}
+.openedNav ul li:nth-of-type(4).show{
+    animation-delay: .5s;
+}
+.openedNav ul li:nth-of-type(5).show{
+    animation-delay: .6s;
+}
+.openedNav ul li:nth-of-type(6).show{
+    animation-delay: .7s;
+}
+
+
+
+
+@keyframes liAnimation{
+    0%{
+        transform: translateY(-100%)
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(100%)
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+.openedNav ul li.hide{
+   animation: liHide .5s  both;
+}
+.openedNav ul li:nth-of-type(2).hide{
+    animation-delay: .2s;
+}
+.openedNav ul li:nth-of-type(3).hide{
+    animation-delay: .4s;
+}
+.openedNav ul li:nth-of-type(4).hide{
+    animation-delay: .6s;
+}
+.openedNav ul li:nth-of-type(5).hide{
+    animation-delay: .8s;
+}
+.openedNav ul li:nth-of-type(6).hide{
+    animation-delay: 1s;
+}
+
+@keyframes liHide{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.openedNav a.active{
+    color: white;
+}
+
+.openedNav a{
+    font-size: 3rem;
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.right{
+    transform: scale(0);
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(222,222,222);
+    position: fixed;
+    z-index: 1;
+   
+}
+.right.show{
+    animation: rightDiv .5s both;
+}
+
+.left{
+    transform: scale(0);
+    position: fixed;
+    left: 50%;
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(222,222,222);
+    z-index: 2;
+}
+
+.left.show{
+    animation: leftDiv .5s both;
+}
+
+@keyframes leftDiv{
+    0%{
+        transform: scale(1) translateY(0);
+    }
+    99%{
+        transform: scale(1) translateY(100%);
+    }
+    100%{
+        transform: scale(0) translateY(100%);
+    }
+}
+
+@keyframes rightDiv{
+    0%{
+        transform: scale(1) translateY(0);
+    }
+    99%{
+        transform: scale(1) translateY(-100%);
+    }
+    100%{
+        transform: scale(0) translateY(-100%);
+    }
+}

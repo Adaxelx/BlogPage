@@ -1,0 +1,27 @@
+.paradoxPage{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around
+}
+
+.paradoxPage a{
+    border-top: 1px solid black;
+    border-radius: 0 10% 0 0;
+    margin-bottom: 2vh;
+}
+
+@media (orientation: landscape){
+    .paradoxPage{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        left: 5%;
+        align-items: flex-start;
+        align-content: space-around;
+    }
+ 
+}
