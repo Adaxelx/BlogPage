@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "2f2a42419d49fb4e17a0a58940e218b5",
-    "url": "/react-with-router/static/media/triangles.2f2a4241.png"
+    "revision": "346b8e003a43098f55e8c4309c18b799",
+    "url": "/react-with-router/static/media/tablica.346b8e00.jpg"
   },
   {
     "revision": "b12d3494c026a951cff0ff564db1e68a",
@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/react-with-router/static/js/runtime~main.8b22acc1.js"
   },
   {
-    "revision": "9bb21c46505a7354dbac",
-    "url": "/react-with-router/static/js/main.9bb21c46.chunk.js"
+    "revision": "fa97e9dcf2e0dfa59ae7",
+    "url": "/react-with-router/static/js/main.fa97e9dc.chunk.js"
   },
   {
     "revision": "7630983d6804d6d675b8",
     "url": "/react-with-router/static/js/2.7630983d.chunk.js"
   },
   {
-    "revision": "9bb21c46505a7354dbac",
-    "url": "/react-with-router/static/css/main.98ed9987.chunk.css"
+    "revision": "fa97e9dcf2e0dfa59ae7",
+    "url": "/react-with-router/static/css/main.747d166d.chunk.css"
   },
   {
-    "revision": "9aac9e06a9717ec9ce58d2000cdeba1d",
+    "revision": "306f878325d7fe9ad4cc8f966af189a1",
     "url": "/react-with-router/index.html"
   }
 ];
