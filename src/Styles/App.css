@@ -8,6 +8,10 @@ html{
   font-family:  'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+}
+
 a i{
   animation: moveI 1s linear both infinite
    alternate;

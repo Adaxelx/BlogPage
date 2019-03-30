@@ -4,22 +4,31 @@
     height: 70vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.startPage .titles{
+    width: 80%;
+    height: 45%;
+    position: relative;
 }
 
 .startPage h1,
 .startPage h3{
+    height: auto;
     position: absolute;
     width: 100%;   
-    /* transform: translateY(-50%); */
     z-index: 1;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     width: auto;
-    left:10%;
     animation: h1Show .5s 2s ease both;
 }
 
 .startPage h1:nth-of-type(1){
-    top: 6%;
+    bottom: 80%;
 }
 
 
@@ -30,13 +39,13 @@
     }
     100%{
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(50%);
     }
 }
 
 
 .startPage h1:nth-of-type(2){
-    top: 14%;
+    bottom: 60%;
     overflow: hidden;
     animation-delay: 2.3s;
 }
@@ -44,7 +53,7 @@
 
 .startPage h1:nth-of-type(3){
     overflow: hidden;
-    top: 22%;
+    bottom: 40%;
     animation-delay: 2.6s;
 }
 
@@ -73,12 +82,12 @@
 }
 
 .startPage h3{
-    top: 30%;
+    bottom: 20%;
     animation-delay: 2.9s;
 }
 
 
-.startPage a{
+/* .startPage a{
     position: absolute;
     bottom: 5%;
     color: black;
@@ -87,9 +96,9 @@
     width: 60%;
     left: 45%;
     animation: moveContinue .5s 3.5s ease both;
-}
+} */
 
-@keyframes moveContinue{
+/* @keyframes moveContinue{
     0%{
         transform:  translateX(-400%);
     }
@@ -97,22 +106,19 @@
     100%{
         transform: translateX(0%);
     }
-}
+} */
 
 .startPage .imgCon{
     width: 80%;
-    position: absolute;
     overflow: hidden;
-    top: 40%;
-    height: 40vh;
+    min-height: 40%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    right: 10%;
 }
 
-.startPage .imgCon img{
+.startPage img{
     width: 100%;
 }
 
@@ -122,6 +128,21 @@
 
 @media (orientation: landscape){
 
+.startPage{
+    width: 80%;
+    left: 10%;
+    flex-direction: row;
+}
+
+.startPage .titles{
+    height: 100%;
+    width: 50%;
+}
+
+.startPage h1,
+.startPage h3{
+    font-size: 1.4rem;
+}
     
 .startPage h1:nth-of-type(1){
     top: 15%;
@@ -137,11 +158,13 @@
 }
 
 .startPage .imgCon{
-    width: 40%;
+    width: 50%;
     height: 90%;
-    top: 15%;
+    top: 3vh;
     right:1%;
 }
+
+.startPage .imgCon img
 
 
 .startPage a{
@@ -161,6 +184,13 @@
 @media (orientation: landscape) and (min-width: 768px){
     html{
         font-size: 20px;
+    }
+
+    .startPage{
+        width: 80%;
+        height: 80vh;
+        left: 10%;
+        flex-direction: row;
     }
 }
 
