@@ -1,7 +1,11 @@
 import React from 'react';
 import '../PageStyles/StartPage.css'
+
 import {NavLink} from 'react-router-dom';
 import img from '../images/triangles.png'
+
+import AboutPage from './AboutPage.js'
+
 const StartPage = () => {
     return ( 
         <section className='startPage'>
@@ -14,7 +18,8 @@ const StartPage = () => {
             <div className='imgCon'>
                 <img src={img} alt=''/>
             </div>
-            <NavLink to='./about'><p className='continue'>Jeżeli chcesz dowiedzieć się więcej kliknij <i className="fas fa-arrow-right"></i></p></NavLink>
+            <AboutPage/>
+            {/* <NavLink to='./about'><p className='continue'>Jeżeli chcesz dowiedzieć się więcej kliknij <i className="fas fa-arrow-right"></i></p></NavLink> */}
         </section>
      );
 }

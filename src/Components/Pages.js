@@ -3,7 +3,7 @@ import '../Styles/Pages.css'
 import {Route, Switch} from 'react-router-dom'
 
 import StartPage from '../Pages/StartPage.js'
-import AboutPage from '../Pages/AboutPage.js'
+// import AboutPage from '../Pages/AboutPage.js'
 import Article from '../Articles/Article.js'
 import ArticlesPage from '../Pages/ArticlesPage.js'
 import Task from '../Articles/Task.js'
@@ -21,7 +21,7 @@ const Start = () => {
         <>
             <Switch>
                 <Route path='/' exact component={StartPage}/>
-                <Route path='/about' exact component={AboutPage}/>
+                {/* <Route path='/about' exact component={AboutPage}/> */}
                 <Route path='/articles' exact component={ArticlesPage}/>
                 <Route path='/articles/:id' exact component={Article}/>
                 <Route path='/tasks' exact component={TasksPage}/>

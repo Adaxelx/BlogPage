@@ -1,5 +1,7 @@
 .aboutPage{
     width: 100%;
+    position: absolute;
+    top: 100%;
 }
 
 .aboutPage .container{
