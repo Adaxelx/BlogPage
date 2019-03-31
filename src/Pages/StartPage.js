@@ -26,6 +26,7 @@ class StartPage extends React.Component{
         return ( 
             <>
             <section className='startPage'>
+            <div className="container">
                 <section className='titles'>
                     <p className={this.state.active ? 'active' : ''}>Loremlore</p>
                     <p className={this.state.active ? 'active' : ''}>Ipsumipsu</p>
@@ -33,6 +34,7 @@ class StartPage extends React.Component{
                 </section>
                 <div className='imgCon'>
                     <img src={img} alt=''/>
+                </div>
                 </div>
                 {/* <NavLink to='./about'><p className='continue'>Jeżeli chcesz dowiedzieć się więcej kliknij <i className="fas fa-arrow-right"></i></p></NavLink> */}
             </section>

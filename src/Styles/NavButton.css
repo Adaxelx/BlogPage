@@ -284,7 +284,8 @@
 }
 
 .openedNav a.active{
-    color: white;
+    color: yellow;
+    -webkit-text-stroke: 1px black;
 }
 
 .openedNav a{
