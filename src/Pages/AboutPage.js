@@ -45,6 +45,7 @@ art4 = React.createRef();
 
 
   componentDidMount() {
+      window.scrollTo(0,0)
       setTimeout(this.handleScroll,3000);
       window.addEventListener('scroll', this.handleScroll);
   }

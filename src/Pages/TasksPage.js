@@ -46,6 +46,10 @@ class TasksPage extends React.Component {
         },
     ]
 
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
    
     render(){
         const articles = this.tasks.map(article => <Link key={article.id} to={{

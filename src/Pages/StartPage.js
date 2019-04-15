@@ -20,6 +20,7 @@ class StartPage extends React.Component{
     }
 
     componentDidMount(){
+        window.scrollTo(0,0);
         setTimeout(this.addClass,2000)
     }
     render(){

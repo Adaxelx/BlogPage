@@ -36,6 +36,10 @@ class ArticlesPage extends React.Component{
       }
    ]
 
+   componentDidMount() {
+      window.scrollTo(0,0);
+  }
+
    render(){
    const articles = this.API.map(article => <Link key={article.id} to={{
       pathname:`/articles/${article.path}`,
