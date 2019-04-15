@@ -40,21 +40,11 @@
 .tasks a .titleTask{
     font-size: 1.2rem;
     margin: .5rem 0 1rem 0;
-    animation: showTask .5s both;
 }
 
-@keyframes showTask{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 .tasks a .sample{
     color: rgb(140,140,140);
-    animation: showTask .5s .3s both;
 }
 
 @media (orientation: landscape){
