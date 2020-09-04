@@ -1,15 +1,15 @@
 {
-  "main.css": "/react-with-router/static/css/main.94afce7a.chunk.css",
-  "main.js": "/react-with-router/static/js/main.a86312bc.chunk.js",
-  "main.js.map": "/react-with-router/static/js/main.a86312bc.chunk.js.map",
-  "runtime~main.js": "/react-with-router/static/js/runtime~main.8b22acc1.js",
-  "runtime~main.js.map": "/react-with-router/static/js/runtime~main.8b22acc1.js.map",
-  "static/js/2.7630983d.chunk.js": "/react-with-router/static/js/2.7630983d.chunk.js",
-  "static/js/2.7630983d.chunk.js.map": "/react-with-router/static/js/2.7630983d.chunk.js.map",
-  "index.html": "/react-with-router/index.html",
-  "precache-manifest.927b26dab0126ed8747f968ded29b752.js": "/react-with-router/precache-manifest.927b26dab0126ed8747f968ded29b752.js",
-  "service-worker.js": "/react-with-router/service-worker.js",
-  "static/css/main.94afce7a.chunk.css.map": "/react-with-router/static/css/main.94afce7a.chunk.css.map",
-  "static/media/OtherPage.css": "/react-with-router/static/media/other.b12d3494.jpg",
-  "static/media/tablica.jpg": "/react-with-router/static/media/tablica.346b8e00.jpg"
+  "main.css": "/BlogPage/static/css/main.19cc7bb9.chunk.css",
+  "main.js": "/BlogPage/static/js/main.e0015d2f.chunk.js",
+  "main.js.map": "/BlogPage/static/js/main.e0015d2f.chunk.js.map",
+  "runtime~main.js": "/BlogPage/static/js/runtime~main.225fb2b7.js",
+  "runtime~main.js.map": "/BlogPage/static/js/runtime~main.225fb2b7.js.map",
+  "static/js/2.7630983d.chunk.js": "/BlogPage/static/js/2.7630983d.chunk.js",
+  "static/js/2.7630983d.chunk.js.map": "/BlogPage/static/js/2.7630983d.chunk.js.map",
+  "index.html": "/BlogPage/index.html",
+  "precache-manifest.bba81b6aa3dc1f443a5726a038eddd9b.js": "/BlogPage/precache-manifest.bba81b6aa3dc1f443a5726a038eddd9b.js",
+  "service-worker.js": "/BlogPage/service-worker.js",
+  "static/css/main.19cc7bb9.chunk.css.map": "/BlogPage/static/css/main.19cc7bb9.chunk.css.map",
+  "static/media/OtherPage.css": "/BlogPage/static/media/other.b12d3494.jpg",
+  "static/media/tablica.jpg": "/BlogPage/static/media/tablica.346b8e00.jpg"
 }
